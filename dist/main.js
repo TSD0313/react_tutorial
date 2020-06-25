@@ -218,6 +218,30 @@ eval("\n\nif (false) {} else {\n  module.exports = __webpack_require__(/*! ./cjs
 
 /***/ }),
 
+/***/ "./src/counter.tsx":
+/*!*************************!*\
+  !*** ./src/counter.tsx ***!
+  \*************************/
+/*! exports provided: default */
+/***/ (function(module, __webpack_exports__, __webpack_require__) {
+
+"use strict";
+eval("__webpack_require__.r(__webpack_exports__);\n/* harmony import */ var react__WEBPACK_IMPORTED_MODULE_0__ = __webpack_require__(/*! react */ \"./node_modules/react/index.js\");\n/* harmony import */ var react__WEBPACK_IMPORTED_MODULE_0___default = /*#__PURE__*/__webpack_require__.n(react__WEBPACK_IMPORTED_MODULE_0__);\nvar __read = (undefined && undefined.__read) || function (o, n) {\r\n    var m = typeof Symbol === \"function\" && o[Symbol.iterator];\r\n    if (!m) return o;\r\n    var i = m.call(o), r, ar = [], e;\r\n    try {\r\n        while ((n === void 0 || n-- > 0) && !(r = i.next()).done) ar.push(r.value);\r\n    }\r\n    catch (error) { e = { error: error }; }\r\n    finally {\r\n        try {\r\n            if (r && !r.done && (m = i[\"return\"])) m.call(i);\r\n        }\r\n        finally { if (e) throw e.error; }\r\n    }\r\n    return ar;\r\n};\r\n\r\nvar Counter = function () {\r\n    var _a = __read(Object(react__WEBPACK_IMPORTED_MODULE_0__[\"useState\"])(0), 2), count = _a[0], setCount = _a[1];\r\n    return (react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement(react__WEBPACK_IMPORTED_MODULE_0___default.a.Fragment, null,\r\n        react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement(\"p\", null,\r\n            \"You clicked \",\r\n            count,\r\n            \" times\"),\r\n        react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement(\"button\", { onClick: function () { return setCount(count + 1); } }, \"Click me\")));\r\n};\r\n/* harmony default export */ __webpack_exports__[\"default\"] = (Counter);\r\n\n\n//# sourceURL=webpack:///./src/counter.tsx?");
+
+/***/ }),
+
+/***/ "./src/funcComponent.tsx":
+/*!*******************************!*\
+  !*** ./src/funcComponent.tsx ***!
+  \*******************************/
+/*! exports provided: default */
+/***/ (function(module, __webpack_exports__, __webpack_require__) {
+
+"use strict";
+eval("__webpack_require__.r(__webpack_exports__);\n/* harmony import */ var react__WEBPACK_IMPORTED_MODULE_0__ = __webpack_require__(/*! react */ \"./node_modules/react/index.js\");\n/* harmony import */ var react__WEBPACK_IMPORTED_MODULE_0___default = /*#__PURE__*/__webpack_require__.n(react__WEBPACK_IMPORTED_MODULE_0__);\n\r\nvar Hello = function (_a) {\r\n    var name = _a.name, age = _a.age;\r\n    return (react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement(react__WEBPACK_IMPORTED_MODULE_0___default.a.Fragment, null,\r\n        react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement(\"h1\", null, \" Hello World\"),\r\n        react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement(\"div\", null,\r\n            \" \\u95A2\\u6570\\u30B3\\u30F3\\u30DD\\u30FC\\u30CD\\u30F3\\u30C8 name:\",\r\n            name,\r\n            \" age:\",\r\n            age)));\r\n};\r\n/* harmony default export */ __webpack_exports__[\"default\"] = (Hello);\r\n\n\n//# sourceURL=webpack:///./src/funcComponent.tsx?");
+
+/***/ }),
+
 /***/ "./src/main.tsx":
 /*!**********************!*\
   !*** ./src/main.tsx ***!
@@ -226,19 +250,7 @@ eval("\n\nif (false) {} else {\n  module.exports = __webpack_require__(/*! ./cjs
 /***/ (function(module, __webpack_exports__, __webpack_require__) {
 
 "use strict";
-eval("__webpack_require__.r(__webpack_exports__);\n/* harmony import */ var react__WEBPACK_IMPORTED_MODULE_0__ = __webpack_require__(/*! react */ \"./node_modules/react/index.js\");\n/* harmony import */ var react__WEBPACK_IMPORTED_MODULE_0___default = /*#__PURE__*/__webpack_require__.n(react__WEBPACK_IMPORTED_MODULE_0__);\n/* harmony import */ var react_dom__WEBPACK_IMPORTED_MODULE_1__ = __webpack_require__(/*! react-dom */ \"./node_modules/react-dom/index.js\");\n/* harmony import */ var react_dom__WEBPACK_IMPORTED_MODULE_1___default = /*#__PURE__*/__webpack_require__.n(react_dom__WEBPACK_IMPORTED_MODULE_1__);\n/* harmony import */ var _sub_component__WEBPACK_IMPORTED_MODULE_2__ = __webpack_require__(/*! ./sub-component */ \"./src/sub-component.tsx\");\nvar __extends = (undefined && undefined.__extends) || (function () {\r\n    var extendStatics = function (d, b) {\r\n        extendStatics = Object.setPrototypeOf ||\r\n            ({ __proto__: [] } instanceof Array && function (d, b) { d.__proto__ = b; }) ||\r\n            function (d, b) { for (var p in b) if (b.hasOwnProperty(p)) d[p] = b[p]; };\r\n        return extendStatics(d, b);\r\n    };\r\n    return function (d, b) {\r\n        extendStatics(d, b);\r\n        function __() { this.constructor = d; }\r\n        d.prototype = b === null ? Object.create(b) : (__.prototype = b.prototype, new __());\r\n    };\r\n})();\r\n\r\n\r\n\r\nvar App = /** @class */ (function (_super) {\r\n    __extends(App, _super);\r\n    function App() {\r\n        return _super !== null && _super.apply(this, arguments) || this;\r\n    }\r\n    App.prototype.render = function () {\r\n        return (react__WEBPACK_IMPORTED_MODULE_0__[\"createElement\"](\"div\", null,\r\n            react__WEBPACK_IMPORTED_MODULE_0__[\"createElement\"](\"h1\", null, \"Hello React!\"),\r\n            react__WEBPACK_IMPORTED_MODULE_0__[\"createElement\"](_sub_component__WEBPACK_IMPORTED_MODULE_2__[\"SubComponent\"], { name: \"My Counter for TypeScript\" })));\r\n    };\r\n    return App;\r\n}(react__WEBPACK_IMPORTED_MODULE_0__[\"Component\"]));\r\nreact_dom__WEBPACK_IMPORTED_MODULE_1__[\"render\"](react__WEBPACK_IMPORTED_MODULE_0__[\"createElement\"](App, null), document.querySelector('#app'));\r\n\n\n//# sourceURL=webpack:///./src/main.tsx?");
-
-/***/ }),
-
-/***/ "./src/sub-component.tsx":
-/*!*******************************!*\
-  !*** ./src/sub-component.tsx ***!
-  \*******************************/
-/*! exports provided: SubComponent */
-/***/ (function(module, __webpack_exports__, __webpack_require__) {
-
-"use strict";
-eval("__webpack_require__.r(__webpack_exports__);\n/* harmony export (binding) */ __webpack_require__.d(__webpack_exports__, \"SubComponent\", function() { return SubComponent; });\n/* harmony import */ var react__WEBPACK_IMPORTED_MODULE_0__ = __webpack_require__(/*! react */ \"./node_modules/react/index.js\");\n/* harmony import */ var react__WEBPACK_IMPORTED_MODULE_0___default = /*#__PURE__*/__webpack_require__.n(react__WEBPACK_IMPORTED_MODULE_0__);\nvar __extends = (undefined && undefined.__extends) || (function () {\r\n    var extendStatics = function (d, b) {\r\n        extendStatics = Object.setPrototypeOf ||\r\n            ({ __proto__: [] } instanceof Array && function (d, b) { d.__proto__ = b; }) ||\r\n            function (d, b) { for (var p in b) if (b.hasOwnProperty(p)) d[p] = b[p]; };\r\n        return extendStatics(d, b);\r\n    };\r\n    return function (d, b) {\r\n        extendStatics(d, b);\r\n        function __() { this.constructor = d; }\r\n        d.prototype = b === null ? Object.create(b) : (__.prototype = b.prototype, new __());\r\n    };\r\n})();\r\n\r\nvar SubComponent = /** @class */ (function (_super) {\r\n    __extends(SubComponent, _super);\r\n    function SubComponent(props) {\r\n        var _this = _super.call(this, props) || this;\r\n        _this.state = {\r\n            count: 0,\r\n        };\r\n        return _this;\r\n    }\r\n    SubComponent.prototype.handleClick = function () {\r\n        console.log('クリックされました');\r\n        this.setState({\r\n            count: this.state.count + 1,\r\n        });\r\n    };\r\n    SubComponent.prototype.render = function () {\r\n        return (react__WEBPACK_IMPORTED_MODULE_0__[\"createElement\"](\"div\", null,\r\n            react__WEBPACK_IMPORTED_MODULE_0__[\"createElement\"](\"h2\", null, this.props.name),\r\n            react__WEBPACK_IMPORTED_MODULE_0__[\"createElement\"](\"div\", null, this.state.count),\r\n            react__WEBPACK_IMPORTED_MODULE_0__[\"createElement\"](\"button\", { onClick: this.handleClick.bind(this) }, \"Add +1\")));\r\n    };\r\n    return SubComponent;\r\n}(react__WEBPACK_IMPORTED_MODULE_0__[\"Component\"]));\r\n\r\n\n\n//# sourceURL=webpack:///./src/sub-component.tsx?");
+eval("__webpack_require__.r(__webpack_exports__);\n/* harmony import */ var react__WEBPACK_IMPORTED_MODULE_0__ = __webpack_require__(/*! react */ \"./node_modules/react/index.js\");\n/* harmony import */ var react__WEBPACK_IMPORTED_MODULE_0___default = /*#__PURE__*/__webpack_require__.n(react__WEBPACK_IMPORTED_MODULE_0__);\n/* harmony import */ var react_dom__WEBPACK_IMPORTED_MODULE_1__ = __webpack_require__(/*! react-dom */ \"./node_modules/react-dom/index.js\");\n/* harmony import */ var react_dom__WEBPACK_IMPORTED_MODULE_1___default = /*#__PURE__*/__webpack_require__.n(react_dom__WEBPACK_IMPORTED_MODULE_1__);\n/* harmony import */ var _funcComponent__WEBPACK_IMPORTED_MODULE_2__ = __webpack_require__(/*! ./funcComponent */ \"./src/funcComponent.tsx\");\n/* harmony import */ var _counter__WEBPACK_IMPORTED_MODULE_3__ = __webpack_require__(/*! ./counter */ \"./src/counter.tsx\");\n\r\n\r\n\r\n\r\nvar app = function () {\r\n    return (react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement(react__WEBPACK_IMPORTED_MODULE_0___default.a.Fragment, null,\r\n        react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement(_funcComponent__WEBPACK_IMPORTED_MODULE_2__[\"default\"], { name: \"hoge\", age: 20 }),\r\n        react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement(_counter__WEBPACK_IMPORTED_MODULE_3__[\"default\"], null)));\r\n};\r\nObject(react_dom__WEBPACK_IMPORTED_MODULE_1__[\"render\"])(app(), document.getElementById('sample'));\r\n\n\n//# sourceURL=webpack:///./src/main.tsx?");
 
 /***/ })
 
