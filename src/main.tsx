@@ -1,16 +1,18 @@
-import * as React from 'react';
-import * as ReactDOM from 'react-dom';
-import {SubComponent} from './sub-component';
+import React from 'react';
+import { render } from "react-dom";
+import FuncHello from './funcComponent';
+import FuncCounter from './counter';
 
-class App extends React.Component {
-  render() {
-    return (
-        <div>
-          <h1>Hello React!</h1>
-          <SubComponent name="My Counter for TypeScript"/>
-        </div>
-    );
-  }
-}
+const app = ()=>{
+  return(
+    <>
+      <FuncHello name={"hoge"} age={20} />
+      <FuncCounter />
+    </>
+  );
+};
 
-ReactDOM.render(<App/>, document.querySelector('#app'));
+render(
+  app(),
+  document.getElementById('sample')
+);
