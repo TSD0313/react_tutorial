@@ -4,10 +4,10 @@ const Counter = () => {
     const [count, setCount] = useState(0);
     return (
         <>
-            <p>You clicked {count} times</p>
-            <button onClick={() => setCount(count + 1)}>
-            Click me
-            </button>
+            <p> Count {count} </p>
+            <button onClick={() => setCount(0)}>Reset</button>
+            <button onClick={() => setCount(prevCount => prevCount - 1)}>-</button>
+            <button onClick={() => setCount(prevCount => prevCount + 1)}>+</button>
         </>
     );
 };
