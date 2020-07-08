@@ -19,11 +19,21 @@ module.exports = {
           test: /\.tsx?$/,
           // TypeScript をコンパイルする
           use: "ts-loader"
+        },
+        {
+          test: /\.css/,
+          use: [
+            "style-loader",
+            {
+              loader: "css-loader",
+              options: { url: false }
+            }
+          ]
         }
       ]
     },
     // import 文で .ts や .tsx ファイルを解決するため
     resolve: {
-      extensions: [".ts", ".tsx", ".js", ".json"]
+      extensions: [".ts", ".tsx", ".js", ".json" , ".css"]
     }
   };
