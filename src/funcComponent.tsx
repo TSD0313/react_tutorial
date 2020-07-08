@@ -7,7 +7,7 @@ interface profile{
 const Hello: React.FC<profile> = ({name,age}) => {
   return (
     <>
-        <h1> Hello World</h1>
+        <h1> React練習中</h1>
         <div> 関数コンポーネント name:{name} age:{age}</div>
     </>
   );
